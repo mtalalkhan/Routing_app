@@ -1,7 +1,12 @@
+import React from 'react';
+
+// Import CSS
 import './App.css';
+
+// Import Components
 import { AccountSummary } from './components/AccountSummary';
 import { AddTransaction } from './components/AddTransaction';
-import { Balancer } from './components/Balance';
+import { Balance } from './components/Balance';
 import {Header} from './components/Header'
 import { TransactionHistory } from './components/TransactionHistory';
 import { GlobalProvider } from './context/GlobalState';
@@ -11,7 +16,7 @@ function App() {
     <GlobalProvider>
       <Header/>
       <div className="container">
-        <Balancer/>
+        <Balance/>
         <AccountSummary/>
         <TransactionHistory/>
         <AddTransaction/>
